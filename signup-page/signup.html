@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="./signup.css">
+    
+</head>
+
+<body>
+    
+ <div class="main">
+
+   
+    <form action="../signin-page/signin.html" id="signup">
+        <h1 style="font-family: sans-serif;">wellcome to create a account!</h1>
+
+        <label for="username" style="margin-left: -50%;">Name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name here" >
+        
+        
+        <label for="email" style="margin-left: -50%;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email here" >
+        
+        
+        <label for="pswd" style="margin-left: -45%;">Password:</label>
+       <div class="child-one">
+        <input type="password" id="pswd" name="password" placeholder="Enter your password"  >
+        <i id="repswd" class="fa-solid fa-eye-slash" style="width: 10px;"></i>
+       </div>
+       
+       
+        
+        
+        <label for="confirm-pswd">Confirm Password:</label>
+        <div class="child-two">
+            <input type="password" id="confirmpswd" name="confirmPassword" placeholder="Confirm your password">
+       
+        <i id="reconfirmpswd" class="fa-solid fa-eye-slash"></i>
+        
+        </div>
+
+        
+        <button type="submit">Sign Up</button>
+        <a href="../signin-page/signin.html">Already have a account?</a>
+    </form>
+    
+    
+ </div>
+   <script src="./signup.js"></script>
+</body>
+</html>

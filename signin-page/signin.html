@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+   
+<div class="main">
+    <div>
+        <h1>Welcome, Guest!</h1>
+    </div>
+    
+   
+    <form action="" id="login">
+        <h1 style="color: rgb(0, 136, 255); font-family: Roboto;"> welcome to login page</h1>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="enter email here">
+        <label for="pswrd">password:</label>
+        <div class="pswrd" style="display: flex; justify-content: center;align-items: center;">
+            <input type="password" id="pswrd" placeholder="enter password here">
+        <i id="repswd" class="fa-solid fa-eye-slash" style="font-size: 20px; margin-left: 15%; display: flex;justify-content: flex-end; align-items: end; position: fixed; cursor: pointer;"></i>
+        </div>
+        
+        <button>submit</button>
+        <a href="../signup-page/signup.html">Don't have account?</a>
+       </form>
+</div>
+ <script src="./signin.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./sky-background.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.main{
+    height: 100vh;
+    /* background-color: skyblue; */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid whitesmoke;
+}
+form{
+    border: 3px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 60px 50px;
+    box-shadow: 3px 3px 3px 3px rgb(84, 77, 77);
+}
+input{
+    border: none;
+    outline: none;
+box-shadow: 2px 3px 3px 3px blue;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+input:hover{
+    box-shadow: 3px 3px 3px 3px rgb(69, 67, 67);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -30%;
+}
+.child-one,.child-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#repswd,#reconfirmpswd{
+   position: fixed;
+    margin-left: 15%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 30%;
+    font-size: 25px;
+}
+button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+button:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.05);
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}

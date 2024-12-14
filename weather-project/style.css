@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+  background-image: url("https://miro.medium.com/v2/resize:fit:5120/1*GsImz-edoeuqCMfKxDus0w.jpeg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+background-color: #5eb3f4;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.inp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.inp input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.inp input:focus {
+    border-color: #4682b4;
+    box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
+}
+
+.inp button {
+    background-color: #4682b4;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.inp button:hover {
+    background-color: #5a9bd3;
+}
+
+
+.countryy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.countryy h1#country {
+    font-size: 2rem;
+    color: #4682b4;
+    margin-bottom: 10px;
+}
+
+.countryy img#imgg {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.countryy h1#des {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.temp img {
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.temp h1#temperature {
+    font-size: 2.5rem;
+    color: gold
+}
+
+/* Lower Section: Humidity & Wind */
+.lower {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.lower .hum, .lower .wind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lower img {
+    width: 40px;
+    height: 40px;
+}
+
+.lower h1 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+@media (max-width: 410px) {
+  
+    .main {
+        width: 100%;
+        padding: 15px;
+    }
+    .countryy h1{
+        font-size: 25px;
+    }
+
+    .inp input {
+        width: 65%;
+    }
+
+    .temp h1#temperature {
+        font-size: 20px;
+    }
+
+    .lower h1 {
+        font-size: 20px;
+    }
+}
+@media  (min-width:411px) and (max-width:550px){
+    .main {
+        width: 100%;
+        padding: 15px;
+    }
+    .countryy h1{
+        font-size: 2rem;
+    }
+
+    .inp input {
+        width: 65%;
+    }
+
+    .temp h1#temperature {
+        font-size: 2rem;
+    }
+
+    .lower h1 {
+        font-size: 20px;
+    }
+}
+    
+
